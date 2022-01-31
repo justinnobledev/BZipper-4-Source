@@ -34,7 +34,7 @@ def compressFiles():
 		reader.close()
 		if(exists(f'./output{f}.bz2') or exists(f'./output{f}')):
 			print(f'{f[1:]} already exists in output folder skipping...')
-		elif(getsize(f'./input{f}') < 150000000):
+		elif(getsize(f'./input{f}') < 157286400):
 			print(f'Compressing file: {f[1:]}')
 			data = compress(data)
 			newPath = f'./output{f}'
